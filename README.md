@@ -1,6 +1,6 @@
 # js-web
     这是一个使用webpack搭建的前端示例项目,此项目依赖node.js
-
+#使用说明
 ````shell
     ##使用git clone <url> 从远程仓库下载项目到本地
     git clone https://github.com/Swedish-li/js-web.git
