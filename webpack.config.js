@@ -1,6 +1,11 @@
 const path = require('path'); //导入包路径
 
+// 插件引入
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+
 module.exports = {
+
 	//入口文件
 	entry: {
 		app: [
@@ -15,6 +20,7 @@ module.exports = {
 		filename: "bundle.js"
 	},
 
+
 	//使用loader模块
 	module:{
 		loaders:[
@@ -24,5 +30,12 @@ module.exports = {
 			{test: /\.scss$/,loader: "style!css!sass"}
 		]
 	},
+
+	// 插件引入
+    plugins: [
+      new HtmlWebpackPlugin({
+          template: './index.html',
+      })
+      ],
 
 }
