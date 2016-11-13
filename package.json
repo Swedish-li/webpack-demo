@@ -1,0 +1,19 @@
+{
+  "name": "web-front",
+  "version": "1.0.0",
+  "description": "这是我第一个前端项目",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "author": "liruishi",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.24.1",
+    "node-sass": "^3.11.3",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3"
+  }
+}
