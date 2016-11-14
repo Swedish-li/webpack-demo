@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack"
   },
-  "author": "liruishi",
+  "author": "swedish li",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.25.0",
