@@ -1,7 +1,7 @@
 {
   "name": "web-front",
   "version": "1.0.0",
-  "description": "这是我第一个前端项目",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack"
@@ -16,5 +16,8 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }

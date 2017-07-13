@@ -4,6 +4,7 @@
 
 ## 常用文档
 
+* [Webpack官方文档](https://webpack.js.org/guides)
 * [simple demos of Webpack](https://github.com/ruanyf/webpack-demos)
 * [使用webpack打包的ES6学习笔记](https://github.com/SimplyWenjing/ES6/)
 
