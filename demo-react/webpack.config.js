@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 const Webpack = require('webpack')
 const path = require('path')
 
@@ -6,7 +7,7 @@ module.exports = {
   entry: './main.jsx',
   output: {
     path: path.resolve(__dirname,'dist'),
-    filename: 'bundle.js'
+    filename: '[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -18,6 +19,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new Webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({template:'./index.html'})
   ]
