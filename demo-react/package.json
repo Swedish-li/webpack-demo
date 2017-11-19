@@ -1,0 +1,20 @@
+{
+  "name": "webpack-react-demo",
+  "version": "1.0",
+  "scripts": {
+    "start": "webpack-dev-server --open -d --inline"
+  },
+  "dependencies": {
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
+    "standard": "^10.0.3",
+    "webpack": "^3.8.1"
+  }
+}
