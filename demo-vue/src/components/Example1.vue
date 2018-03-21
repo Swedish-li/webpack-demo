@@ -17,23 +17,23 @@
 
 <script>
 export default {
-  name: 'example1',
-  data () {
+  name: "example1",
+  data() {
     return {
-      firstName: '',
-	  lastName: ''
-    }
+      firstName: "",
+      lastName: ""
+    };
   },
   computed: {
-	fullName: function () {
-	  			return this.firstName + ' ' + this.lastName 
-	 }
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
   }
-}
+};
 </script>
 
 <style>
-	.content{
-		border: 1px solid blue;
-	}
+.content {
+  border: 1px solid blue;
+}
 </style>

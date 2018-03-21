@@ -28,6 +28,20 @@ $ npm run dev
 # build for production with minification
 $ npm run build
 ```
+## Babel配置
 
+[preset-env配置](https://babeljs.io/docs/plugins/preset-env/#examples)
+
+```json
+    // .babelrc
+    // 默认使用 "presets": ["last"]
+    // 
+    {
+        "presets": [
+            ["env", { "modules": false }]
+        ]
+    }
+
+```
 
 [1]: https://vue-loader.vuejs.org/zh-cn/
