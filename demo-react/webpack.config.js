@@ -3,10 +3,14 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const Webpack = require('webpack')
 const path = require('path')
 
+function resolve(dir) {
+  return path.join(__dirname, '.', dir)
+}
+
 module.exports = {
   entry: './main.jsx',
   output: {
-    path: path.resolve(__dirname,'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
   },
   module: {
@@ -14,13 +18,18 @@ module.exports = {
       {
         test: /\.js[x]?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader?presets[]=es2015&presets[]=react'
+        use: 'babel-loader'
       }
     ]
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      '@': resolve('src'),
+    }
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new Webpack.optimize.UglifyJsPlugin(),
-    new HtmlWebpackPlugin({template:'./index.html'})
+    new HtmlWebpackPlugin({ template: './index.html' })
   ]
 }
