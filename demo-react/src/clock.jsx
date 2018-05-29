@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default class Clock extends React.Component {
+export default class Clock extends Component {
   constructor (props) {
     super(props)
-    this.state = { current: new Date() }
+    this.state = { current: Date.now() }
   }
 
   componentDidMount () {
@@ -19,7 +19,7 @@ export default class Clock extends React.Component {
   tick () {
     // Do Not Modify State Directly
     this.setState(
-      { current: new Date() }
+      { current: Date.now() }
     )
   }
 

@@ -1,9 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const Webpack = require('webpack')
 const path = require('path')
 
-function resolve(dir) {
+function resolve (dir) {
   return path.join(__dirname, '.', dir)
 }
 
@@ -25,7 +24,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
   plugins: [
