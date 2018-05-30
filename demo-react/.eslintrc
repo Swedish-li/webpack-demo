@@ -1,0 +1,11 @@
+{
+    "rules": {},
+    "extends": [
+        "standard",
+        "standard-jsx"
+    ],
+    "env": {
+        "jest": true,
+        "jasmine": true
+    }
+}

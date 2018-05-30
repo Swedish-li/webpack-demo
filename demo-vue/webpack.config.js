@@ -1,5 +1,6 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 function resolve(dir) {
   return path.join(__dirname, '.', dir)
@@ -9,9 +10,18 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    // publicPath: '/dist/',
     filename: 'build.js'
-  },
+  }, plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'index.html',
+      minify: {
+        removeAttributeQuotes: true
+      },
+      hash: true,
+    })
+  ],
   module: {
     rules: [{
       test: /\.(js|vue)$/,

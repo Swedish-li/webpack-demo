@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app 1`] = `
+<button
+  onClick={[Function]}
+>
+  ON
+</button>
+`;
+
+exports[`app 2`] = `
+<button
+  onClick={[Function]}
+>
+  OFF
+</button>
+`;

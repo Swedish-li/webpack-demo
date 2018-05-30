@@ -1,11 +1,6 @@
-const React = require('react')
-const ReactDOM = require('react-dom')
-
-class Greeting extends React.Component {
-  render() {
-    return <h1>Hello,{this.props.name}</h1>
-  }
-}
+import Greeting from '@/app'
+import ReactDOM from 'react-dom'
+import React from 'react'
 
 ReactDOM.render(
   <Greeting name="React's world!" />,
