@@ -1,22 +1,22 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>{{msg}}</h1>
+      <h1>{{ msg }}</h1>
       <hr>
-       <ul class="nav navbar-nav">
-            <li><router-link to="/">简介</router-link></li>
-            <li><router-link to="/example1">示例1</router-link></li>
-          </ul>
+      <ul class="nav navbar-nav">
+        <li><router-link to="/">简介</router-link></li>
+        <li><router-link to="/example1">示例1</router-link></li>
+      </ul>
       <hr>
     </div>
-    
-    <router-view></router-view>
+
+    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
+  name: 'App',
   data () {
     return {
       msg: 'Welcome to My Vue.js App'
