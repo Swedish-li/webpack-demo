@@ -4,8 +4,7 @@
       <h1>{{ msg }}</h1>
       <hr>
       <ul class="nav navbar-nav">
-        <li><router-link to="/">简介</router-link></li>
-        <li><router-link to="/example1">示例1</router-link></li>
+        <li><router-link to="/">目录</router-link></li>
       </ul>
       <hr>
     </div>
@@ -19,7 +18,7 @@ export default {
   name: 'App',
   data () {
     return {
-      msg: 'Welcome to My Vue.js App'
+      msg: 'Welcome to Vue!'
     }
   }
 }

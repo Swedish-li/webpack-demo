@@ -9,7 +9,8 @@
         class="avatar">
     </div>
     <ol>
-      <li>计算属性</li>
+      <li><router-link to="/example1">计算属性</router-link></li>
+      <li><router-link to="/custom-event">自定义事件</router-link></li>
     </ol>
 
   </div>
