@@ -1,35 +1,39 @@
 <template>
-	<div class="content">
-		<table>
-			<tr>
-				<td>First Name:</td>
-				<td><input type="text" v-model="firstName"></td>
-			</tr>
-			<tr>
-				<td>Last Name:</td>
-				<td><input type="text" v-model="lastName"></td>
-			</tr>
-				
-		</table>
-		<h3>Full Name:{{fullName}}</h3>
-	</div>
+  <div class="content">
+    <table>
+      <tr>
+        <td>First Name:</td>
+        <td><input
+          v-model="firstName"
+          type="text"></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input
+          v-model="lastName"
+          type="text"></td>
+      </tr>
+
+    </table>
+    <h3>Full Name:{{ fullName }}</h3>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "example1",
-  data() {
+  name: 'Example1',
+  data () {
     return {
-      firstName: "",
-      lastName: ""
-    };
+      firstName: '',
+      lastName: ''
+    }
   },
   computed: {
-    fullName: function() {
-      return this.firstName + " " + this.lastName;
+    fullName: function () {
+      return this.firstName + ' ' + this.lastName
     }
   }
-};
+}
 </script>
 
 <style>

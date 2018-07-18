@@ -1,34 +1,38 @@
 <template>
-	<div>
-		<h2>Vue示例</h2>
+  <div>
+    <h2>Vue示例</h2>
 
-		<div>
-			<img :src="avatar" alt="リトルウィッチアカデミア" class="avatar">
-		</div>
-		<ol>
-			<li>计算属性</li>
-		</ol>
-		
-	</div>
+    <div>
+      <img
+        :src="avatar"
+        alt="リトルウィッチアカデミア"
+        class="avatar">
+    </div>
+    <ol>
+      <li><router-link to="/example1">计算属性</router-link></li>
+      <li><router-link to="/custom-event">自定义事件</router-link></li>
+    </ol>
+
+  </div>
 </template>
 
 <script>
 import avatar from '../assets/avatar.png'
 
 export default {
-	name: 'home',
-	data() {
-		return {
-			avatar: avatar
-		}
-	}
+  name: 'Home',
+  data () {
+    return {
+      avatar: avatar
+    }
+  }
 }
 </script>
 
 <style>
-	.avatar{
-		width: 213.5px;
-		height: 210.5px;
-		border-radius: 50%
-	}
+  .avatar{
+    width: 213.5px;
+    height: 210.5px;
+    border-radius: 50%
+  }
 </style>
