@@ -1,0 +1,22 @@
+{
+  "name": "typescript-demo",
+  "version": "1.0.0",
+  "description": " typescript demo ",
+  "main": "index.js",
+  "author": "Swedish-li",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "@types/velocity-animate": "^1.2.32",
+    "velocity-animate": "^1.5.1"
+  }
+}
