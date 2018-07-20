@@ -12,6 +12,14 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/
             }
+            // , {
+            //     test: require.resolve('velocity-animate/velocity'),
+            //     use: [{
+            //         loader: 'expose-loader',
+            //         options: 'Velocity'
+            //     }
+            //     ]
+            // }
         ]
     },
     resolve: {
