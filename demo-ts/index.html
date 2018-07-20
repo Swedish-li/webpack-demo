@@ -6,10 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Typescript Demo</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 5px auto;
+        }
+
+        h1 {
+            background-color: blueviolet;
+        }
+
+        h3 {
+            background-color: red;
+        }
+
+        h2 {
+            background-color: gold;
+        }
+
+        h4 {
+            background-color: chartreuse;
+        }
+
+        #pulse {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello Typescript!</h1>
+    <div class="container">
+        <h1>Hello Typescript!</h1>
+        <div class="seq">
+            <h2>Element H2</h2>
+            <h3>Element h3</h3>
+            <h4>Element h4</h4>
+        </div>
+        <div id="pulse">Click Me!</div>
+    </div>
+
 </body>
 
 </html>
