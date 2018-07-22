@@ -19,25 +19,19 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: /node_module/,
                 use: [
-                    {
-                        loader: 'style-loader',
-                        options: {
-                            // importLoaders: 1,
-                            sourceMap: true
-                        }
-                    },
+                    { loader: 'style-loader' },
                     {
                         loader: 'css-loader',
                         options: {
-                            sourceMap: true
+                            modules: true,
+                            importLoaders: 1
                         }
                     },
                     {
                         loader: 'postcss-loader',
                         options: {
-                            sourceMap: true
+                            modules: true
                         }
                     }
                 ]
@@ -50,5 +44,3 @@ module.exports = {
         })
     ]
 }
-
-// 设置 mode
