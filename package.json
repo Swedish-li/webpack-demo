@@ -1,0 +1,17 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "webpack demos",
+  "main": "index.js",
+  "repository": "git@github.com:Swedish-li/webpack-demo.git",
+  "author": "Swedish-li <one.piece.li.2016@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "demo1": "webpack --config ./demo1/webpack.config.js --mode=development"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
