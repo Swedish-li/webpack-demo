@@ -8,9 +8,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "demo1": "webpack --config ./demo1/webpack.config.js --mode=development"
+    "demo1": "webpack --config ./demo1/webpack.config.js --mode=development",
+    "demo0": "webpack --config ./demo0/webpack.config.js",
+    "format": "prettier --write .",
+    "define:dev": "webpack --config ./definePlugin/webpack.config.js --mode development",
+    "define:prod": "webpack --config ./definePlugin/webpack.config.js --mode production"
   },
   "devDependencies": {
+    "prettier": "^2.0.5",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }

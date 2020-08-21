@@ -2,9 +2,7 @@
 /build/
 node_modules
 build
-.vscode
 dist
 *.log
-dist
 
 coverage
