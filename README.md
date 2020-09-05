@@ -6,7 +6,7 @@
 
 - [Webpack 官方文档](https://webpack.js.org/guides)
 - [simple demos of Webpack](https://github.com/ruanyf/webpack-demos)
-- [使用 webpack 打包的 ES6 学习笔记](https://github.com/SimplyWenjing/ES6/)
+- [webpack-howto](https://github.com/petehunt/webpack-howto)
 
 ## 常用命令
 

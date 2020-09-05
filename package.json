@@ -12,11 +12,16 @@
     "demo0": "webpack --config ./demo0/webpack.config.js",
     "format": "prettier --write .",
     "define:dev": "webpack --config ./definePlugin/webpack.config.js --mode development",
-    "define:prod": "webpack --config ./definePlugin/webpack.config.js --mode production"
+    "define:prod": "webpack --config ./definePlugin/webpack.config.js --mode production",
+    "lazy-loading" : "node ./lazy-loading/build.js"
   },
   "devDependencies": {
     "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
   }
 }
